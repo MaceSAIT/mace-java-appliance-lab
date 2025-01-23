@@ -7,6 +7,13 @@ import java.util.Scanner; // Import the Scanner class to read text files
 
 // C:\Users\maceh\eclipse-workspace\mace_lab_1\appliances.txt
 
+
+/*
+ * Written by Mace Howald on 01-18-25
+ * For CPRG 304 E
+ * 
+ */
+
 public class Main {
 
 	public static void main(String[] args) throws IOException {
@@ -54,6 +61,36 @@ public class Main {
 	
 	public static void createAppliance(int id, String brand, int qty, float watts, String colour, float price) {
 		
+		char typeID = Integer.toString(id).charAt(0);
+		//System.out.println(typeID);
+		String appType;
+		
+		switch(typeID) {
+		
+			case '1':
+				appType = "Fridge";
+				break;
+				
+			case '2':
+				appType = "Vaccum";
+				break;
+				
+			case '3':
+				appType = "Microwave";
+				break;
+				
+			case '4':
+			case '5':
+				appType = "Dishwasher";
+				break;
+				
+			default:
+				appType = "Default";
+				break;
+			 
+		}
+		
+		
 		Appliances newAppliance = new Appliances();
 		
 		newAppliance.setAppID(id);
@@ -64,6 +101,7 @@ public class Main {
 		newAppliance.setPrice(price);
 		
 		System.out.println(newAppliance);
+		System.out.println(appType);
 	}
 	
 
