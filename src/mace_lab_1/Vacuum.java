@@ -43,7 +43,7 @@ public class Vacuum extends Appliances{
 
 	@Override
 	public String toString(){
-		return "ID: " + this.getAppID() + " - Brand: " + this.getBrand() + " - Quantity: " + this.getQuantity() + " - Wattage: " + this.getWattage() + " - Colour: " + this.getColour() + " - Price: " + this.getPrice() + " - Grade: " + this.grade + " - Voltage: " + this.batteryVolts;
+		return "ID: " + this.getAppID() + " - Brand: " + this.getBrand() + " - Type: " + this.getType() + " - Quantity: " + this.getQuantity() + " - Wattage: " + this.getWattage() + " - Colour: " + this.getColour() + " - Price: " + this.getPrice() + " - Grade: " + this.grade + " - Voltage: " + this.batteryVolts;
 	}
 
 }

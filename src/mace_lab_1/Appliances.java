@@ -57,7 +57,7 @@ public class Appliances {
 
 	@Override
 	public String toString(){
-		return "ID: " + this.appID + " - Brand: " + this.brand + " - Quantity: " + this.quantity + " - Wattage: " + this.wattage + " - Colour: " + this.colour + " - Price: " + this.price;
+		return "ID: " + this.appID + " - Brand: " + this.brand + " - Type: " + this.type + " - Quantity: " + this.quantity + " - Wattage: " + this.wattage + " - Colour: " + this.colour + " - Price: " + this.price;
 	}
 
 }

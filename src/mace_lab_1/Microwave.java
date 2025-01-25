@@ -48,7 +48,7 @@ public class Microwave extends Appliances{
 
 	@Override
 	public String toString(){
-		return "ID: " + this.getAppID() + " - Brand: " + this.getBrand() + " - Quantity: " + this.getQuantity() + " - Wattage: " + this.getWattage() + " - Colour: " + this.getColour() + " - Price: " + this.getPrice() + " - Capacity: " + this.capacity + " - Room Type: " + this.roomType;
+		return "ID: " + this.getAppID() + " - Brand: " + this.getBrand() + " - Type: " + this.getType() + " - Quantity: " + this.getQuantity() + " - Wattage: " + this.getWattage() + " - Colour: " + this.getColour() + " - Price: " + this.getPrice() + " - Capacity: " + this.capacity + " - Room Type: " + this.roomType;
 	}
 
 }

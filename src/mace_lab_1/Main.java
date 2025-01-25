@@ -361,16 +361,13 @@ public class Main {
         
         // Display appliances based on the selected type
         System.out.println("Displaying appliances of type: " + selectedType);
+        System.out.println("---------------------------------------");
         for (int i = 0; i < applianceCount; i++) {
             Appliances appliance = appliancesArray[i];
             
             if (selectedType.equals("All") || appliance.getType().equalsIgnoreCase(selectedType)) {
                 // Display appliance details
-                System.out.println("Appliance ID: " + appliance.getAppID());
-                System.out.println("Brand: " + appliance.getBrand());
-                System.out.println("Type: " + appliance.getType());
-                System.out.println("Quantity: " + appliance.getQuantity());
-                System.out.println("Price: $" + appliance.getPrice());
+                System.out.println(appliance);
                 System.out.println("---------------------------------------");
                 found = true;
             }
@@ -402,6 +399,7 @@ public class Main {
         Random random = new Random();
         
         System.out.println("Displaying " + numAppliances + " random appliances:");
+        System.out.println("---------------------------------------");
         
         // Keep track of which appliances have already been shown (to avoid repeats)
         boolean[] shown = new boolean[applianceCount];
@@ -420,6 +418,7 @@ public class Main {
             
             // Display the details of the randomly selected appliance
             System.out.println(appliance);
+            System.out.println("---------------------------------------");
         }
         
         mainMenu(); // Return to Main Menu

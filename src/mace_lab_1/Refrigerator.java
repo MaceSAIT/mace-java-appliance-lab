@@ -53,7 +53,7 @@ public class Refrigerator extends Appliances{
 
 	@Override
 	public String toString(){
-		return "ID: " + this.getAppID() + " - Brand: " + this.getBrand() + " - Quantity: " + this.getQuantity() + " - Wattage: " + this.getWattage() + " - Colour: " + this.getColour() + " - Price: " + this.getPrice() + " - Doors: " + this.doorNumber + " - Height: " + this.height + " - Width: " + this.width;
+		return "ID: " + this.getAppID() + " - Brand: " + this.getBrand() + " - Type: " + this.getType() + " - Quantity: " + this.getQuantity() + " - Wattage: " + this.getWattage() + " - Colour: " + this.getColour() + " - Price: " + this.getPrice() + " - Doors: " + this.doorNumber + " - Height: " + this.height + " - Width: " + this.width;
 	}
 
 }
