@@ -10,7 +10,14 @@ public class Appliances {
 	private float wattage;
 	private String colour;
 	private float price;
+	private String type;
 	
+	public String getType() {
+		return type;
+	}
+	public void setType(String type) {
+		this.type = type;
+	}
 	public int getAppID() {
 		return appID;
 	}
